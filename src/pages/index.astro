@@ -1,16 +1,121 @@
 ---
-
+import "../styles/global.css";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#1e3a8a" />
+    <title>¡Felicidades, Nat!</title>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Quicksand:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/de19704bb3.js"
+      crossorigin="anonymous"></script>
+  </head>
+  <body
+    class="font-[Quicksand] bg-blue-100 text-blue-100 flex items-center justify-center min-h-screen p-4"
+  >
+    <main
+      class="grid grid-cols-1 md:grid-cols-2 gap-8 bg-blue-950/80 p-4 sm:p-6 rounded-2xl shadow-2xl max-w-5xl w-full items-center"
+    >
+      <section
+        class="relative w-full flex justify-center items-center min-h-[400px] sm:min-h-[500px]"
+      >
+        <div
+          class="absolute w-48 h-48 sm:w-64 sm:h-64 bg-yellow-300 rounded-full blur-3xl opacity-50 z-0"
+        >
+        </div>
+        <img
+          src="/chica-graduada.png"
+          alt="Chica graduada"
+          class="w-36 sm:w-52 z-10"
+        />
+        <img
+          src="/corazon.png"
+          class="absolute top-[10%] left-[44%] sm:top-[7%] sm:left-[48%] w-6 sm:w-7 rotate-0 animate-float z-0"
+        />
+        <img
+          src="/corazon.png"
+          class="absolute top-[6%] left-[50%] sm:top-[3%] sm:left-[55%] w-7 sm:w-9 rotate-12 animate-float z-0"
+        />
+        <img
+          src="/corazon.png"
+          class="absolute top-[13%] left-[55%] sm:top-[10%] sm:left-[61%] w-7 sm:w-9 rotate-[22deg] animate-float z-0"
+        />
+        <img
+          src="/michi2.png"
+          class="absolute top-[18%] left-[10%] sm:top-[14%] sm:left-[15%] w-12 sm:w-16 -rotate-12 animate-float z-0"
+        />
+        <img
+          src="/fnaf.png"
+          class="absolute top-[20%] right-[8%] sm:top-[16%] sm:right-[15%] w-10 sm:w-12 rotate-12 animate-float z-0"
+        />
+        <img
+          src="/churro.png"
+          class="absolute top-[48%] right-[6%] sm:top-[43%] sm:right-[12%] w-14 sm:w-16 rotate-12 animate-float z-0"
+        />
+        <img
+          src="/michi1.png"
+          class="absolute bottom-[10%] right-[7%] sm:bottom-[15%] sm:right-[13%] w-16 sm:w-20 rotate-12 animate-float z-0"
+        />
+        <img
+          src="/twice.png"
+          class="absolute bottom-[10%] left-[8%] sm:bottom-[15%] sm:left-[14%] w-14 sm:w-16 -rotate-12 animate-float z-0"
+        />
+        <img
+          src="/uvas.png"
+          class="absolute top-[42%] left-[15%] sm:top-[38%] sm:left-[21%] w-8 sm:w-10 rotate-12 animate-float z-0"
+        />
+        <img
+          src="/fresa.png"
+          class="absolute top-[50%] left-[6%] sm:top-[45%] sm:left-[12%] w-10 sm:w-12 -rotate-12 animate-float z-0"
+        />
+      </section>
+
+      <section class="text-center md:text-left px-2 sm:px-0">
+        <h1 class="text-3xl sm:text-4xl font-bold text-blue-200 mb-4">
+          ¡Felicidades, Nat! 🎓✨
+        </h1>
+        <p class="text-base sm:text-lg mb-4">
+          Hoy cierras una etapa hermosa,<br />
+          y das el primer paso hacia un mundo lleno de posibilidades.
+        </p>
+        <p class="mb-4 text-base sm:text-lg">
+          Estoy seguro de que todo lo que viene para ti<br />
+          será tan brillante como tú.
+        </p>
+        <p class="mb-6 text-base sm:text-lg">
+          Te mereces lo mejor, siempre.<br />
+          Gracias por compartir un pedacito de ti conmigo.
+        </p>
+        <p class="font-semibold text-base sm:text-lg">
+          Con mucho cariño,<br />Leo.
+        </p>
+        <div
+          class="flex flex-col sm:flex-row sm:justify-between items-center mt-6 gap-4 w-full"
+        >
+          <div class="flex space-x-1">
+            <img src="/corazon.png" class="w-6" />
+            <img src="/corazon.png" class="w-6" />
+            <img src="/corazon.png" class="w-6" />
+          </div>
+          <a
+            href="/Muchas Felicidades Nat.png"
+            download
+            class="inline-flex flex-col items-center bg-gradient-to-r from-blue-500 to-blue-700 text-white font-semibold px-5 py-3 rounded-full shadow-md hover:scale-105 hover:shadow-xl transition-transform duration-300 text-sm md:text-base leading-tight text-center"
+          >
+            <span class="flex items-center gap-2">
+              <i class="fa-solid fa-circle-down"></i>
+              Guardalo para siempre
+            </span>
+          </a>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>
