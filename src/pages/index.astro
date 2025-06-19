@@ -141,7 +141,44 @@ import "../styles/global.css";
             </span>
           </a>
         </div>
+        <div
+          id="date"
+          class="text-center text-sm sm:text-xs text-blue-200 italic mt-5 col-span-full animate-fade-in"
+        >
+        </div>
       </section>
     </main>
+    <script is:inline>
+      const fechaGraduacion = new Date("2025-06-13");
+      const hoy = new Date();
+
+      let años = hoy.getFullYear() - fechaGraduacion.getFullYear();
+      let meses = hoy.getMonth() - fechaGraduacion.getMonth();
+      let días = hoy.getDate() - fechaGraduacion.getDate();
+
+      if (días < 0) {
+        meses -= 1;
+        const mesAnterior = new Date(hoy.getFullYear(), hoy.getMonth(), 0);
+        días += mesAnterior.getDate();
+      }
+
+      if (meses < 0) {
+        años -= 1;
+        meses += 12;
+      }
+
+      let partes = [];
+      if (años > 0) partes.push(`${años} año${años === 1 ? "" : "s"}`);
+      if (meses > 0) partes.push(`${meses} mes${meses === 1 ? "" : "es"}`);
+      if (días > 0 || partes.length === 0)
+        partes.push(`${días} día${días === 1 ? "" : "s"}`);
+
+      const mensaje = `
+        <span class="block">Con mucho cariño para tu graduación<br />
+        del <strong>13 junio 2025</strong> 🎉💖 — han pasado <strong>${partes.join(" y ")}</strong> desde entonces 🌟.</span>
+      `;
+
+      document.getElementById("date").innerHTML = mensaje;
+    </script>
   </body>
 </html>
